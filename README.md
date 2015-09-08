@@ -5,6 +5,20 @@ It has two main purposes:
 * Solve the riddles with advanced es6 syntax
 * Solve cool riddles anyway
 
+##Build repository
+
+Download the repository then 
+
+> npm install
+
+## Run exercises
+Run 
+> gulp
+
+Then 
+> cd dist
+> node runExercise.js <number of exercise>
+ 
 ## Contributions
 
 The following contributions are welcome:
@@ -12,7 +26,8 @@ The following contributions are welcome:
 * Better syntax for solving issues
 * Better algorithms for existing solutions
 
-I would prefer not to get new solutions as I want to solve them alone :-)
+I would prefer not to get new solutions as I want to solve them alone :-).
+But feel free to for it :-)
 
 
 
