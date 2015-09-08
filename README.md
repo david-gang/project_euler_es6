@@ -27,7 +27,7 @@ The following contributions are welcome:
 * Better algorithms for existing solutions
 
 I would prefer not to get new solutions as I want to solve them alone :-).
-But feel free to for it :-)
+But feel free to fork it :-)
 
 
 
