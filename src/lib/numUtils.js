@@ -5,6 +5,7 @@ export function primeFactors(num) {
     while (num > 1) {
         while(num%n ===0) {
             res.push(n);
+            num = num/n;
         }
         n++;
 
