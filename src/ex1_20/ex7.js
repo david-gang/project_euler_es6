@@ -10,7 +10,7 @@ function nthPrime(n) {
     return gen.next().value;
 }
 
-export default class ex6 {
+export default class ex7 {
     runTest() {
         return nthPrime(6);
     }

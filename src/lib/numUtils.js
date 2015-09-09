@@ -14,7 +14,14 @@ export function primeFactors(num) {
 }
 
 function isPrime(num, primes) {
+    let root = Math.sqrt(num);
+    if(root %1 === 0) {
+        return false;
+    }
     for(let prime of primes) {
+        if(prime > root) {
+            break;
+        }
         if((num % prime) ==0) {
             return false;
         }
