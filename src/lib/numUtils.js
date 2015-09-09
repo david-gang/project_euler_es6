@@ -12,3 +12,23 @@ export function primeFactors(num) {
     }
     return res;
 }
+
+function isPrime(num, primes) {
+    for(let prime of primes) {
+        if((num % prime) ==0) {
+            return false;
+        }
+    }
+    return true;
+}
+export function *primeGenerator() {
+    let primes = [];
+    let num = 2;
+    while(true) {
+        if(isPrime(num,primes)){
+            primes.push(num);
+            yield num;
+        }
+        num++;
+    }
+}
