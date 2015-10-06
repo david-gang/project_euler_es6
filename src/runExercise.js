@@ -1,5 +1,7 @@
 "use strict";
 
+require("babel/polyfill");
+
 let args = process.argv.slice(2);
 
 let num = args[0];

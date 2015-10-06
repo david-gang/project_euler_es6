@@ -1,4 +1,5 @@
 "use strict";
+require("babel/polyfill");
 
 exports.primeFactors = function(num) {
 
