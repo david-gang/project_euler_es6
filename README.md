@@ -2,7 +2,7 @@
 
 This repository is a fun repository for solving [project euler](https://projecteuler.net/) riddles with es6.
 It has two main purposes:
-* Solve the riddles with advanced es6 syntax
+* Solve the riddles with advanced es6 syntax, supported by nodejs 4
 * Solve cool riddles anyway
 
 ##Build repository
