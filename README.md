@@ -12,12 +12,24 @@ Download the repository then
 > npm install
 
 ## Run exercises
+###Nodejs < 4
 Run 
 > gulp
 
 Then 
 > cd dist
 > node runExercise.js <number of exercise>
+
+###Nodejs > 4
+> cd src
+> node runExercise.js <number of exercise>
+
+## Test exercises
+###Nodejs < 4
+> gulp test_transpiled
+
+###Nodejs > 4
+> gulp test
  
 ## Contributions
 
