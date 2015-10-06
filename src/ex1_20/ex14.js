@@ -1,3 +1,4 @@
+"use strict";
 
 function collatzLength(n) {
     let i = 1;
@@ -14,13 +15,13 @@ function collatzLength(n) {
     }
     return i;
 }
-export default class ex14 {
+class ex14 {
     runTest() {
         return collatzLength(13);
     }
 
     runEx() {
-        let length = 0
+        let length = 0;
         let index = 0;
         for(let i = 13; i<1000000; i++) {
             let l = collatzLength(i);
@@ -33,3 +34,5 @@ export default class ex14 {
     }
 
 }
+
+module.exports = ex14;

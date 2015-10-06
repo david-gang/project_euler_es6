@@ -1,4 +1,7 @@
-import {primeFactorsMap}   from "../lib/numUtils";
+"use strict";
+
+let numUtils = require("../lib/numUtils");
+let primeFactorsMap = numUtils.primeFactorsMap;
 
 function *triangleNumber() {
     let i = 2;
@@ -27,7 +30,7 @@ function smallestNumberWithDivisorsOver(n) {
     }
 }
 
-export default class ex12 {
+class ex12 {
     runTest() {
         return smallestNumberWithDivisorsOver(5);
     }
@@ -37,3 +40,5 @@ export default class ex12 {
     }
 
 }
+
+module.exports = ex12;

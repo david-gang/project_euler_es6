@@ -1,4 +1,6 @@
-export function primeFactors(num) {
+"use strict";
+
+exports.primeFactors = function(num) {
 
     let res = [];
     let n = 2;
@@ -11,7 +13,24 @@ export function primeFactors(num) {
 
     }
     return res;
-}
+};
+
+
+exports.primeFactorsMap = function(num) {
+   let res = exports.primeFactors(num);
+    let multiple = new Map();
+    for(let j of res) {
+        if(!multiple.has(j)) {
+            multiple.set(j,1);
+        }
+        else {
+            multiple.set(j,multiple.get(j)+1);
+        }
+
+    }
+
+    return multiple;
+};
 
 function isPrime(num, primes) {
     let root = Math.sqrt(num);
@@ -28,7 +47,7 @@ function isPrime(num, primes) {
     }
     return true;
 }
-export function *primeGenerator() {
+function *primeGenerator() {
     let primes = [];
     let num = 2;
     while(true) {
@@ -39,3 +58,5 @@ export function *primeGenerator() {
         num++;
     }
 }
+
+exports.primeGenerator = primeGenerator;

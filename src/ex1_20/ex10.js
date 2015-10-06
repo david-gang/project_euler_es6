@@ -1,4 +1,8 @@
-import {primeGenerator}   from "../lib/numUtils";
+"use strict";
+
+let numUtils = require("../lib/numUtils");
+let primeGenerator = numUtils.primeGenerator;
+
 
 function sumOfPrimesBelow(n) {
     let gen = primeGenerator();
@@ -11,7 +15,7 @@ function sumOfPrimesBelow(n) {
     return sum;
 }
 
-export default class ex10 {
+class ex10 {
     runTest() {
         return sumOfPrimesBelow(10);
     }
@@ -21,3 +25,5 @@ export default class ex10 {
     }
 
 }
+
+module.exports = ex10;

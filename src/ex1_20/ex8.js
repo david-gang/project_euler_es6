@@ -1,3 +1,5 @@
+"use strict";
+
 let numberStr = `73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
 85861560789112949495459501737958331952853208805511
@@ -38,7 +40,7 @@ function biggestMultiplicator(windowSize){
     return biggestMulti;
 }
 
-export default class ex8 {
+class ex8 {
     runTest() {
         return biggestMultiplicator(4);
     }
@@ -48,3 +50,5 @@ export default class ex8 {
     }
 
 }
+
+module.exports = ex8;

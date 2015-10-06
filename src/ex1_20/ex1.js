@@ -1,3 +1,5 @@
+"use strict";
+
 function *generateDivider(num) {
     for (let i = 1; i < num; i++) {
         if (i % 3 === 0 || i % 5 === 0) {
@@ -14,7 +16,7 @@ function sumDivider(num) {
     }
     return sum;
 }
-export default class ex1 {
+class ex1 {
     runTest() {
         return sumDivider(10);
     }
@@ -24,3 +26,5 @@ export default class ex1 {
     }
 
 }
+
+module.exports = ex1;

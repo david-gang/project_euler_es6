@@ -1,3 +1,5 @@
+"use strict";
+
 function sumEvenFibSmallerThan(num) {
     let sum = 0;
     for (let x of evenFibSmallerThan(num)) {
@@ -40,9 +42,11 @@ function *fibGen() {
     }
 }
 
-export default class ex2 {
+class ex2 {
     runEx() {
         return sumEvenFibSmallerThan(4000000);
     }
 
 }
+
+module.exports = ex2;

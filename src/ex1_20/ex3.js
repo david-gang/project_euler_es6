@@ -1,11 +1,14 @@
-import {primeFactors}   from "../lib/numUtils";
+"use strict";
+
+let numUtils = require("../lib/numUtils");
+let primeFactors = numUtils.primeFactors;
 
 function largestPrimeFactor(num) {
     let factors = primeFactors(num);
     return factors[factors.length - 1];
 }
 
-export default class ex3 {
+class ex3 {
     runTest() {
         return largestPrimeFactor(13195);
     }
@@ -15,3 +18,5 @@ export default class ex3 {
     }
 
 }
+
+module.exports = ex3;

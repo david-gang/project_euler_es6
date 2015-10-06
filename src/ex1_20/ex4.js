@@ -1,3 +1,5 @@
+"use strict";
+
 function isPalindrome(num) {
     var arr = num.toString().split('');
     var half = Math.floor(arr.length/2);
@@ -28,7 +30,7 @@ function findLargestPalindrome(n) {
 }
 
 
-export default class ex4 {
+class ex4 {
     runTest() {
         return findLargestPalindrome(2);
     }
@@ -38,3 +40,5 @@ export default class ex4 {
     }
 
 }
+
+module.exports = ex4;

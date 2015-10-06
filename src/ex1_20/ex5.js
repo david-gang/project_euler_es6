@@ -1,4 +1,7 @@
-import {primeFactors}   from "../lib/numUtils";
+"use strict";
+
+let numUtils = require("../lib/numUtils");
+let primeFactors = numUtils.primeFactors;
 
 
 function createPrimeMap(num) {
@@ -18,7 +21,9 @@ function createPrimeMap(num) {
 }
 
 function mergeMaps(map1, map2) {
-    for (let [key, value] of map2.entries()) {
+    for (let arr of map2.entries()) {
+        let key = arr[0];
+        let value = arr[1];
         if(!map1.has(key) || map1.get(key) <value ) {
             map1.set(key,value);
         }
@@ -31,13 +36,13 @@ function smallestMultiple(num) {
         mergeMaps(commonMultiple, multiple);
     }
     let product = 1;
-    for (let [key, value] of commonMultiple.entries()) {
-        product *= Math.pow(key, value);
+    for (let arr of commonMultiple.entries()) {
+        product *= Math.pow(arr[0], arr[1]);
     }
     return product;
 }
 
-export default class ex4 {
+class ex5 {
     runTest() {
         return smallestMultiple(10);
     }
@@ -47,3 +52,4 @@ export default class ex4 {
     }
 
 }
+module.exports = ex5;

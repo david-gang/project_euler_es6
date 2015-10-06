@@ -1,4 +1,7 @@
-import {primeGenerator}   from "../lib/numUtils";
+"use strict";
+
+let numUtils = require("../lib/numUtils");
+let primeGenerator = numUtils.primeGenerator;
 
 function nthPrime(n) {
     let i = 1;
@@ -10,7 +13,7 @@ function nthPrime(n) {
     return gen.next().value;
 }
 
-export default class ex7 {
+class ex7 {
     runTest() {
         return nthPrime(6);
     }
@@ -20,3 +23,5 @@ export default class ex7 {
     }
 
 }
+
+module.exports = ex7;
