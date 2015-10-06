@@ -19,7 +19,9 @@ describe('run all exercises', function() {
                 {num:11, res:[70600674]},
                 {num:12, res:[76576500,28]},
                 {num:13, res:[5.53737623]},
-                {num:14, res:[837799, 10]}
+                {num:14, res:[837799, 10]},
+                {num:15, res:[137846528820, 6]},
+                {num:16, res:[1366, 26]}
             ];
             exercises.forEach(function(test) {
                 it(`exercise test.num`, function() {
